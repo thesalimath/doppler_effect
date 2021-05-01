@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.body {
+  overflow: hidden;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
+.allcontainer {
+  position: relative;
+  background-color: black;
+  height: 86vh;
+  width: 100vw;
+}
+
+#star {
+  position: absolute;
+  top: 0;
+  width: 420px;
+  height: 420px;
+  transform: translateX(50%) translateY(55%);
+  filter: blur(50px);
+  border-radius: 50%;
+}
+.inputcontainer {
+  position: absolute;
+  bottom: 50px;
+  left: 60%;
+  width: 40%;
+  background-color: white;
+}
+#errorMsg {
+  color: red;
+  padding-right: 100px;
+  position: absolute;
+  bottom: 20px;
+}
+
+#dopplerText {
+  height: 30px;
+  width: 70px;
+  font-size: 16px;
+  font-weight: 900;
+}
+.slidecontainer {
+  width: 100%;
+  position: absolute;
+  bottom: 50px;
+  margin-left: 1%;
+}
+#inputcluster {
+  background-color: white;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 50%;
+  height: 10px;
+  background: linear-gradient(to right, blue, red);
+  border-radius: 5px;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background: #e642f5;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4caf50;
+  cursor: pointer;
+}
